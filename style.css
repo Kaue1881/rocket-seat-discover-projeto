@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/ cover;
+  height: 100vh;
 }
 
 body * {
@@ -96,7 +97,7 @@ body * {
   align-items: center;
   list-style: none;
   gap: 16px;
-  padding: 24px 0;
+  padding: 24px 10px;
 }
 
 .lista a {
@@ -153,4 +154,14 @@ footer {
   align-items: center;
   padding: 24px 0;
   gap: 6px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url("./assets/bg-desktop.jpg");
+  }
+
+  .light-mode {
+    --bg-url: url("./assets/bg-desktop-light.jpg");
+  }
 }
